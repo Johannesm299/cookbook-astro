@@ -1,6 +1,6 @@
 # The Cookbook
 
-I present you the best cookbook in the world.
+I present you the best online cookbook in the world. Check it out: <https://fedjaw.github.io/cookbook-astro/about/>
 
 ## Astro
 
@@ -35,3 +35,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## Tutorial
+
+<https://docs.astro.build/en/tutorial/5-astro-api/1/>

@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Tag from "../../components/Tag.astro";
 
-const pageTitle = "Tag Index";
+const pageTitle = "Tags";
 const allPosts = await Astro.glob("../posts/*.md");
 const uniqueTags = [...new Set(allPosts.flatMap((p) => p.frontmatter.tags))];
 ---

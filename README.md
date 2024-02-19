@@ -12,7 +12,26 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 ├── src/
+│   └── components/
+│       └── Blog.astro
+│       └── Footer.astro
+│       └── Hamburger.astro
+│       └── Header.astro
+│       └── Navigation.astro
+│       └── Social.astro
+│       └── Tag.astro
+│   └── layouts/
+│       └── BaseLayout.astro
+│       └── MarkdownPostLayout.astro
 │   └── pages/
+│       └── posts/
+|           └── 0001_lavacake.md
+|           └── 0002_creme_brulee.md
+│       └── tags/
+|           └── [tag].astro
+|           └── index.astro
+│       └── about.astro
+│       └── blog.astro
 │       └── index.astro
 └── package.json
 ```
@@ -38,4 +57,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## Tutorial
 
-<https://docs.astro.build/en/tutorial/5-astro-api/1/>
+<https://docs.astro.build/en/tutorial/6-islands/1/>

@@ -55,6 +55,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Tutorial
+### Useful links
 
-<https://docs.astro.build/en/tutorial/6-islands/1/>
+<https://open-props.style/#getting-started/>

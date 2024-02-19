@@ -4,14 +4,28 @@ import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <header>
-  <nav class="header">
+  <nav>
+    <a href="/cookbook-astro/">Das Kochbuch</a>
     <Navigation />
     <ThemeIcon />
   </nav>
 </header>
 
 <style>
- .header {
-  display: flex;
- }
+  nav {
+    padding-block: var(--size-7);
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links {
+      display: flex;
+      gap: var(--size-7);
+      margin-block: 0;
+    }
+  }
 </style>

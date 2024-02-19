@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Lavakuchen auf Himbeerspiegel'
-pubDate: '02.15.2024'
-description: 'Ein Schokoküchlein mit flüssigem Kern'
-author: 'Friedrich'
+title: "Lavakuchen auf Himbeerspiegel"
+pubDate: "02.15.2024"
+description: "Ein Schokoküchlein mit flüssigem Kern"
+author: "Friedrich"
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
+  url: "https://docs.astro.build/assets/full-logo-light.png"
+  alt: "The full Astro logo."
 tags: ["Nachspeise", "Schokolade"]
 ---
 
@@ -22,4 +22,49 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 ## What's next
 
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.

@@ -2,7 +2,25 @@
 
 ---
 
-<div class="nav-links">
-  <a href="/cookbook-astro/">Rezepte</a>
-  <a href="/cookbook-astro/tags/">Tags</a>
-</div>
+<ul class='links'>
+  <li>
+    <a href='/cookbook-astro/'>Rezepte</a>
+  </li>
+  <li>
+    <a href='/cookbook-astro/tags/'>Tags</a>
+  </li>
+</ul>
+
+<style>
+  .links {
+    margin-block: var(--size-7);
+  }
+
+  @media (min-width: 768px) {
+    .links {
+      display: flex;
+      gap: var(--size-10);
+      margin-block: 0;
+    }
+  }
+</style>

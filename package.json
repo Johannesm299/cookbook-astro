@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.5",
-    "astro": "^4.3.7"
+    "@fontsource/jetbrains-mono": "^5.0.18",
+    "@fontsource/manrope": "^5.0.18",
+    "astro": "^4.3.7",
+    "lucide-astro": "^0.334.0",
+    "open-props": "^1.6.18"
   }
 }

@@ -1,16 +1,17 @@
 ---
-import Social from "./Social.astro";
 ---
 
 <footer>
-  <Social platform="github" username="fedjaw" />
-  <Social platform="instagram" username="fedjaw" />
+  <p>Das Kochbuch &copy {new Date().getFullYear()}</p>
 </footer>
 
 <style>
   footer {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    padding-block: var(--size-7);
+    border-top: 1px solid var(--border);
+  }
+
+  p {
+    color: var(--text-2);
   }
 </style>

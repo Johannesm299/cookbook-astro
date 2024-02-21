@@ -2,18 +2,20 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<ul class="links">
-  <div>{currentPath}</div>
+<ul class='links'>
   <li>
     <a
-      class={currentPath === "/cookbook-astro/" ? "active" : ""}
-      href="/cookbook-astro/">Rezepte</a
+      class={currentPath === "/cookbook-astro" ||
+      currentPath === "/cookbook-astro/?"
+        ? "active"
+        : ""}
+      href='/cookbook-astro/'>Rezepte</a
     >
   </li>
   <li>
     <a
       class={currentPath === "/cookbook-astro/tags/" ? "active" : ""}
-      href="/cookbook-astro/tags/">Tags</a
+      href='/cookbook-astro/tags/'>Tags</a
     >
   </li>
 </ul>

@@ -1,25 +1,35 @@
 ---
-
+const currentPath = Astro.url.pathname;
 ---
 
-<ul class='links'>
+<ul class="links">
   <li>
-    <a href='/cookbook-astro/'>Rezepte</a>
+    <a
+      class={currentPath === "/cookbook-astro/" ? "active" : ""}
+      href="/cookbook-astro/">Rezepte</a
+    >
   </li>
   <li>
-    <a href='/cookbook-astro/tags/'>Tags</a>
+    <a
+      class={currentPath === "/cookbook-astro/tags/" ? "active" : ""}
+      href="/cookbook-astro/tags/">Tags</a
+    >
   </li>
 </ul>
 
 <style>
+  .active {
+    text-decoration: underline;
+  }
+
   .links {
     margin-block: var(--size-7);
+    display: flex;
+    gap: var(--size-7);
   }
 
   @media (min-width: 768px) {
     .links {
-      display: flex;
-      gap: var(--size-10);
       margin-block: 0;
     }
   }

@@ -9,7 +9,11 @@ const pageTitle = "Rezepte";
   <ul>
     {
       allPosts.map((post) => (
-        <RecipePost url={post.url} title={post.frontmatter.title} />
+        <RecipePost
+          url={post.url}
+          title={post.frontmatter.title}
+          subtitle={post.frontmatter.description}
+        />
       ))
     }
   </ul>

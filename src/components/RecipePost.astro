@@ -1,7 +1,21 @@
 ---
-const { url, title } = Astro.props;
+const { url, title, subtitle } = Astro.props;
 ---
 
-<li>
+<li class="recipe">
   <a href={url}>{title}</a>
+  <p class="subtitle">{subtitle}</p>
 </li>
+
+<style>
+  .recipe {
+    margin-block: var(--size-6);
+    font-size: var(--size-4);
+  }
+  .subtitle {
+    color: var(--text-3);
+    margin-top: 0;
+    font-style: italic;
+    font-size: var(--size-3);
+  }
+</style>

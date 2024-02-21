@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
   <p><em>{frontmatter.description}</em></p>
   <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
   <div class="tags">
-    {frontmatter.tags.map((tag) => <Tag tag={tag} />)}
+    {frontmatter.tags.sort().map((tag: String) => <Tag tag={tag} />)}
   </div>
 
   <slot />

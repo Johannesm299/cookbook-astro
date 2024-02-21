@@ -58,3 +58,5 @@ All commands are run from the root of the project, from a terminal:
 ### Useful links
 
 <https://open-props.style/#getting-started/>
+
+<https://www.cyishere.dev/blog/astro-active-nav-item>

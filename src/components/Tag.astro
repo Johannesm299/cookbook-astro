@@ -1,22 +1,17 @@
 ---
-const {tag} = Astro.props;
+const { tag } = Astro.props;
 ---
 
-<p class='tag'>
-  <a href={`/cookbook-astro/tags/${tag}`}>{tag}</a>
+<p class="tag">
+  <a href={`/cookbook-astro/tags/${tag}`}>#{tag}</a>
 </p>
 
 <style>
-  a {
-    color: #00539f;
-  }
-
   .tag {
     margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: 0.5em;
+    border: solid 1px #a1a1a1;
+    border-radius: 1em;
     padding: 0.5em 1em;
-    font-size: 1.15em;
-    background-color: #f8fcfd;
+    background-color: var(--tag);
   }
 </style>

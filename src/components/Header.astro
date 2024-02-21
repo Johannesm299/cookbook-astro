@@ -5,21 +5,37 @@ import ThemeIcon from "./ThemeIcon.astro";
 
 <header>
   <nav>
-    <a href="/cookbook-astro/">Das Kochbuch</a>
-    <Navigation />
-    <ThemeIcon />
+    <a href="/cookbook-astro/" class="title">Das Kochbuch</a>
+    <div class="right-side">
+      <Navigation />
+      <ThemeIcon />
+    </div>
   </nav>
 </header>
 
 <style>
   nav {
+    align-items: center;
     padding-block: var(--size-7);
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+  }
+
+  .right-side {
+    align-items: center;
+    display: flex;
+    gap: var(--size-7);
+  }
+
+  .title {
+    display: none;
   }
 
   @media (min-width: 768px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
+    .title {
+      display: inline;
+      font-size: x-large;
     }
   }
 </style>

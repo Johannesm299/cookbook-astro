@@ -5,32 +5,32 @@ import { getUniqueTags } from "../../scripts/getUniqueTags.astro";
 
 export async function getStaticPaths() {
   const uniqueTags = await getUniqueTags();
-  const allPosts = await Astro.glob("../posts/*.md");
+  const allRecipes = await Astro.glob("../recipes/*.md");
 
   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post) =>
-      post.frontmatter.tags?.includes(tag)
+    const filteredRecipes = allRecipes.filter((recipe) =>
+    recipe.frontmatter.tags?.includes(tag)
     );
     return {
       params: { tag },
-      props: { posts: filteredPosts },
+      props: { recipes: filteredRecipes },
     };
   });
 }
 
 const { tag } = Astro.params;
-const { posts } = Astro.props;
+const { recipes } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
   <p class="hint">Rezepte die mit {tag} markiert sind</p>
   <ul>
     {
-      posts.map((post) => (
+      recipes.map((recipe) => (
         <RecipePost
-          url={post.url}
-          title={post.frontmatter.title}
-          subtitle={post.frontmatter.description}
+          url={recipe.url}
+          title={recipe.frontmatter.title}
+          subtitle={recipe.frontmatter.description}
         />
       ))
     }

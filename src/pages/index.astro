@@ -1,18 +1,18 @@
 ---
 import RecipePost from "../components/RecipePost.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-const allPosts = await Astro.glob("../pages/posts/*.md");
+const allRecipes = await Astro.glob("../pages/recipes/*.md");
 const pageTitle = "Rezepte";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <ul>
     {
-      allPosts.map((post) => (
+      allRecipes.map((recipe) => (
         <RecipePost
-          url={post.url}
-          title={post.frontmatter.title}
-          subtitle={post.frontmatter.description}
+          url={recipe.url}
+          title={recipe.frontmatter.title}
+          subtitle={recipe.frontmatter.description}
         />
       ))
     }

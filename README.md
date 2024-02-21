@@ -24,7 +24,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── BaseLayout.astro
 │       └── MarkdownPostLayout.astro
 │   └── pages/
-│       └── posts/
+│       └── recipes/
 |           └── 0001_lavacake.md
 |           └── 0002_creme_brulee.md
 │       └── tags/

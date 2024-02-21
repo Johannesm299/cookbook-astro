@@ -3,6 +3,7 @@ const currentPath = Astro.url.pathname;
 ---
 
 <ul class="links">
+  <div>{currentPath}</div>
   <li>
     <a
       class={currentPath === "/cookbook-astro/" ? "active" : ""}

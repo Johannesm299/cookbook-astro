@@ -1,6 +1,6 @@
 ---
 export const getUniqueTags = async () => {
-  const allRecipes = await Astro.glob("../pages/recipes/*.md");
+  const allRecipes = await Astro.glob("../pages/recipes/*.mdx");
   const uniqueTags = [
     ...new Set(allRecipes.map((recipes) => recipes.frontmatter.tags).flat()),
   ];

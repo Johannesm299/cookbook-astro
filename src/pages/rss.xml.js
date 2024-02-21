@@ -5,7 +5,7 @@ export async function GET(context) {
     title: "Kochbuch | Rezepte",
     description: "Die besten Rezepte der Welt",
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
+    items: await pagesGlobToRssItems(import.meta.glob("./**/*.mdx")),
     customData: `<language>de-de</language>`,
   });
 }

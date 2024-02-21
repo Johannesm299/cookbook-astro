@@ -5,7 +5,7 @@ import { getUniqueTags } from "../../scripts/getUniqueTags.astro";
 
 export async function getStaticPaths() {
   const uniqueTags = await getUniqueTags();
-  const allRecipes = await Astro.glob("../recipes/*.md");
+  const allRecipes = await Astro.glob("../recipes/*.mdx");
 
   return uniqueTags.map((tag) => {
     const filteredRecipes = allRecipes.filter((recipe) =>

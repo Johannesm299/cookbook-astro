@@ -6,10 +6,9 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>Autor: {frontmatter.author}</p>
-  <p>Veröffentlich am {frontmatter.pubDate}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <p >{frontmatter.description}</p>
+  <!-- <p>Autor: {frontmatter.author}</p>
+  <p>Veröffentlich am {frontmatter.pubDate}</p> -->
   <div class="tags">
     {frontmatter.tags.sort().map((tag: String) => <Tag tag={tag} />)}
   </div>
@@ -21,5 +20,6 @@ const { frontmatter } = Astro.props;
   .tags {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: var(--size-8);
   }
 </style>

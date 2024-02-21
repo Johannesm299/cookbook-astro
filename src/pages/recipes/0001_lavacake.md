@@ -4,67 +4,21 @@ title: "Lavakuchen auf Himbeerspiegel"
 pubDate: "02.15.2024"
 description: "Ein Schokoküchlein mit flüssigem Kern"
 author: "Friedrich"
-image:
-  url: "https://docs.astro.build/assets/full-logo-light.png"
-  alt: "The full Astro logo."
 tags: ["Nachspeise", "Schokolade", "2024"]
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+## Zubereitung
 
-## What I've accomplished
+Die Butter zusammen mit der Schokolade in einem Wasserbad schmelzen lassen. Dies geht schneller, wenn beide Zutaten zuvor zerkleinert werden. Mehl, Salz und Zucker in einer kleinen Schüssel vermischen. Die Eier trennen und das Eigelb in einer größeren Schüssel mit einem Schneebesen aufschlagen. Die Mehlmischung aus Mehl, Salz und Zucker langsam unter stetigem Rühren zu den Eiern hinzufügen. In der Zwischenzeit die Förmchen mit Butter einfetten und mit Kakaopulver bestäuben. Dadurch lassen sich die Küchlein später leichter aus den Förmchen lösen.
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+Sobald die Butter und die Schokolade vollständig geschmolzen sind, die Mischung etwas abkühlen lassen, damit die Eier nicht stocken. Die geschmolzene Schokoladen-Butter-Mischung zur Eier-Mehl-Mischung geben und gut verrühren.
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+Die Masse gleichmäßig auf 5 Förmchen verteilen und bei 200 Grad Umluft etwa 9 Minuten backen. Die Küchlein anschließend auf einen Teller stürzen.
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+### Für den Himbeerspiegel
 
-## What's next
+Zucker in einem Topf schmelzen, gefrorene Himbeeren hinzufügen und zum Kochen bringen. Die Himbeeren zuerst pürieren und dann durch ein Sieb streichen.
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+### Für das Drumherum
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+Die Törtchen mit Vanilleeis, dem Himbeerspiegel, Physalis und Blaubeeren anrichten."

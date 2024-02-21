@@ -1,25 +1,32 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Crème brûlée'
-pubDate: '02.15.2024'
-description: 'Klassisches Crème brûlée'
-author: 'Friedrich'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
+title: "Crème brûlée"
+pubDate: "02.15.2024"
+description: "Klassisches Crème brûlée"
+author: "Friedrich"
 tags: ["Nachspeise", "Flammbiert", "2024"]
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+## Zubereitung
 
-## What I've accomplished
+Ofen vorheizen auf 150°C (Umluft).
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+Die Sahne in einen Topf geben. Die Vanilleschote der Länge nach aufschneiden und das Mark herauskratzen. Sowohl das Mark als auch die Schote in die Sahne geben und langsam erhitzen. Dabei nicht kochen lassen. Wenn Sie Vanilleextrakt verwenden, fügen Sie diesen später hinzu, nicht während des Erhitzens.
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+In einer separaten Schüssel die Eigelb mit dem Zucker und einer Prise Salz cremig rühren, bis die Mischung heller wird.
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+Die warme Sahne langsam unter ständigem Rühren in die Eigelb-Zucker-Mischung gießen, um die Eigelb nicht zu stocken. Wenn Sie eine Vanilleschote verwendet haben, entfernen Sie diese aus der Sahne, bevor Sie sie hinzufügen.
 
-## What's next
+Die Mischung durch ein feines Sieb gießen, um eventuelle Klumpen zu entfernen und eine glatte Textur zu erhalten.
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+Die Crème Brûlée Mischung in feuerfeste Förmchen gießen. Sie können dafür kleine Keramikschälchen oder Brûlée-Förmchen verwenden.
+
+Die Förmchen in eine große Backform stellen und heißes Wasser in die Form gießen, sodass die Förmchen zu etwa zwei Dritteln im Wasser stehen. Dieses Wasserbad hilft, eine gleichmäßige Wärmeverteilung zu gewährleisten.
+
+Die Crème Brûlée im vorgeheizten Ofen etwa 30-40 Minuten backen, bis sie gestockt, aber noch leicht wackelig in der Mitte ist.
+
+Die fertigen Crème Brûlées aus dem Ofen nehmen und abkühlen lassen. Dann im Kühlschrank für mindestens 2 Stunden oder über Nacht kalt stellen, damit sie fest werden.
+
+Kurz vor dem Servieren die Oberfläche der Crème Brûlées mit einer dünnen Schicht Zucker bestreuen. Den Zucker mit einem Küchenbrenner oder unter dem Grill des Backofens karamellisieren, bis er goldbraun und knusprig ist.
+
+Die Crème Brûlée einige Minuten ruhen lassen, damit sich das Karamell festigt, und dann sofort servieren.

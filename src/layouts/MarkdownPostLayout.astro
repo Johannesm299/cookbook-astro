@@ -1,16 +1,29 @@
 ---
 import Tag from "../components/Tag.astro";
+import Ingredient from "../components/Ingredient.astro";
 import BaseLayout from "./BaseLayout.astro";
+import H2 from "../components/markdownelements/H2.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p >{frontmatter.description}</p>
-  <!-- <p>Autor: {frontmatter.author}</p>
-  <p>Veröffentlich am {frontmatter.pubDate}</p> -->
+  <p>{frontmatter.description}</p>
+  <p>{frontmatter.author}, {frontmatter.pubDate}</p>
   <div class="tags">
     {frontmatter.tags.sort().map((tag: String) => <Tag tag={tag} />)}
+  </div>
+  <H2 text="Zutaten" />
+
+  <div class="ingredients">
+    {
+      frontmatter.ingredients.map((i) => (
+        <>
+          <Ingredient ingredient={i} />
+          <p>, </p>
+        </>
+      ))
+    }
   </div>
 
   <slot />
@@ -21,5 +34,10 @@ const { frontmatter } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: var(--size-8);
+  }
+
+  .ingredients {
+    display: flex;
+    gap: 10px;
   }
 </style>

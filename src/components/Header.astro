@@ -1,11 +1,12 @@
 ---
 import Navigation from "./Navigation.astro";
 import ThemeIcon from "./ThemeIcon.astro";
+import { config } from "../config.ts";
 ---
 
 <header>
   <nav>
-    <a href="/cookbook-astro/" class="title">Das Kochbuch</a>
+    <a href="/cookbook-astro/" class="title">{config.appTitle}</a>
     <div class="right-side">
       <Navigation />
       <ThemeIcon />

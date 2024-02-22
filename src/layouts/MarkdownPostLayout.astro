@@ -3,6 +3,7 @@ import Tag from "../components/Tag.astro";
 import Ingredient from "../components/Ingredient.astro";
 import BaseLayout from "./BaseLayout.astro";
 import H2 from "../components/markdownelements/H2.astro";
+import ImageWrapper from "../components/ImageWrapper.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -13,8 +14,12 @@ const { frontmatter } = Astro.props;
   <div class="tags">
     {frontmatter.tags.sort().map((tag: String) => <Tag tag={tag} />)}
   </div>
-  <H2 text="Zutaten" />
 
+  <div class="imgwrapper">
+    <ImageWrapper imagePath={"/src/images/" + frontmatter.imagename} altText="A bird sitting on a nest of eggs." />
+  </div>
+
+  <H2 text="Zutaten" />
   <div class="ingredients">
     {
       frontmatter.ingredients.map((i) => (
@@ -27,6 +32,10 @@ const { frontmatter } = Astro.props;
 </BaseLayout>
 
 <style>
+  .imgwrapper {
+    margin-bottom: var(--size-8);
+  }
+
   .tags {
     display: flex;
     flex-wrap: wrap;

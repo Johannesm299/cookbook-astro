@@ -62,3 +62,7 @@ All commands are run from the root of the project, from a terminal:
 <https://www.cyishere.dev/blog/astro-active-nav-item>
 
 <https://www.markdownguide.org/cheat-sheet/>
+
+### Weird stuff
+
+A change of pubDate from pubDate: "02.22.2024" to pubDate: "22.02.2024" will lead to an build (`npm run build`) error.

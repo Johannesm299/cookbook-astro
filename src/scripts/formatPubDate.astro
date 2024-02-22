@@ -1,0 +1,6 @@
+---
+export const formatPubDate = (pubDate: String) => {
+    const [month, day, year] = pubDate.split(".")
+    return `${day}.${month}.${year}`
+}
+---

@@ -4,13 +4,14 @@ import Ingredient from "../components/Ingredient.astro";
 import BaseLayout from "./BaseLayout.astro";
 import H2 from "../components/markdownelements/H2.astro";
 import ImageWrapper from "../components/ImageWrapper.astro";
+import { formatPubDate } from "../scripts/formatPubDate.astro"
 
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
   <p>{frontmatter.subtitle}</p>
-  <p>{frontmatter.author}, {frontmatter.pubDate}</p>
+  <p>{frontmatter.author}, {formatPubDate(frontmatter.pubDate)}</p>
   <div class="tags">
     {frontmatter.tags.sort().map((tag: String) => <Tag tag={tag} />)}
   </div>

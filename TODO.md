@@ -2,6 +2,6 @@
 
 - [x] Style header in mobile mode
 - [x] Style the recipe list overview
-- [ ] Create and style the ingredients area
-- [ ] Add some recipes
+- [x] Create and style the ingredients area
+- [x] Add some recipes
 - [ ] Remove unused dependencies

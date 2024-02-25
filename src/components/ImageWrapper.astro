@@ -1,34 +1,48 @@
 ---
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 interface Props {
-   imagePath: string;
-   altText: string;
+  imagePath: string;
+  altText: string;
 }
 
 const { imagePath, altText } = Astro.props;
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/*.{jpeg,jpg,png}');
-if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png}"`);
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/*.{jpeg,jpg,png}"
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png}"`
+  );
 ---
 
 <div class="container">
-    <Image class='img' src={images[imagePath]()} alt={altText} />
+  <Image class="img" src={images[imagePath]()} alt={altText} />
 </div>
 
-
 <style>
+  .img {
+    height: 1000%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
     .img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
+      height: 75%;
+      width: 75%;
     }
     .container {
-        display: flex;
-        justify-content: center;
-    }   
+      justify-content: start;
+    }
+  }
 </style>
 
-<!-- width={300} height={300} -->
 <!-- source: -->
 <!-- https://docs.astro.build/en/recipes/dynamically-importing-images/ -->

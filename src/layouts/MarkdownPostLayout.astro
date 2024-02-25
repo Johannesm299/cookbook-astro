@@ -4,29 +4,28 @@ import Ingredient from "../components/Ingredient.astro";
 import BaseLayout from "./BaseLayout.astro";
 import H2 from "../components/markdownelements/H2.astro";
 import ImageWrapper from "../components/ImageWrapper.astro";
-import { formatPubDate } from "../scripts/formatPubDate.astro"
+import { formatPubDate } from "../scripts/formatPubDate.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>{frontmatter.subtitle}</p>
-  <p>{frontmatter.author}, {formatPubDate(frontmatter.pubDate)}</p>
+  <div class="imgwrapper">
+    <ImageWrapper
+      imagePath={"/src/images/" + frontmatter.imagename}
+      altText={frontmatter.imagename}
+    />
+  </div>
   <div class="tags">
     {frontmatter.tags.sort().map((tag: String) => <Tag tag={tag} />)}
   </div>
 
-  <div class="imgwrapper">
-    <ImageWrapper imagePath={"/src/images/" + frontmatter.imagename} altText="A bird sitting on a nest of eggs." />
-  </div>
+  <p>{frontmatter.subtitle}</p>
+  <p>{frontmatter.author}, {formatPubDate(frontmatter.pubDate)}</p>
 
   <H2 text="Zutaten" />
   <div class="ingredients">
-    {
-      frontmatter.ingredients.map((i) => (
-          <Ingredient ingredient={i} />
-      ))
-    }
+    {frontmatter.ingredients.map((i) => <Ingredient ingredient={i} />)}
   </div>
 
   <slot />

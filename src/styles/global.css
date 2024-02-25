@@ -1,7 +1,7 @@
-@import "open-props/style";
-@import "open-props/sizes";
-@import "@fontsource/manrope";
-@import "@fontsource/jetbrains-mono";
+@import 'open-props/style';
+@import 'open-props/sizes';
+@import '@fontsource/manrope';
+@import '@fontsource/jetbrains-mono';
 
 body {
   max-inline-size: 1440px;

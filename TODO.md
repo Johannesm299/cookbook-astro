@@ -5,3 +5,18 @@
 - [x] Create and style the ingredients area
 - [x] Add some recipes
 - [ ] Remove unused dependencies
+
+- [ ] Create Contact Page
+- [ ] Add Steps Images
+
+## Recipes to add
+
+- [ ] Passion Fruit Daiguiri
+- [ ] Blini mit Milchmädchen
+- [ ] Manti
+- [ ] Spaghetti Bolognese
+- [ ] Kartoffelpüree
+- [ ] Königsberger Klöpse nach Mama Art
+- [ ] Schaschlik a la Asemissen
+- [ ] Plow für Arme
+- [ ]

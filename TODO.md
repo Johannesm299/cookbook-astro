@@ -5,20 +5,23 @@
 - [x] Create and style the ingredients area
 - [x] Add some recipes
 - [x] Show no image available
+- [x] Add fitness recipes
+- [ ] How to display nutrition information for fitness recipes
+- [ ] Add Duration Information
 
-- [ ] Add fitness recipes
-
+- [ ] Make Typogrophy nice
 - [ ] Create Contact Page
 - [ ] Add Steps Images
 - [ ] Remove unused dependencies
 
 ## Recipes to add
 
+- [ ] Kartoffelpüree
+
 - [ ] Passion Fruit Daiguiri
 - [ ] Blini mit Milchmädchen
 - [ ] Manti
 - [ ] Spaghetti Bolognese
-- [ ] Kartoffelpüree
 - [ ] Königsberger Klöpse nach Mama Art
 - [ ] Schaschlik a la Asemissen
 - [ ] Plow für Arme

@@ -5,8 +5,7 @@
 - [x] Create and style the ingredients area
 - [x] Add some recipes
 - [x] Show no image available
-
-- [ ] Add fitness recipes
+- [x] Add fitness recipes
 
 - [ ] Create Contact Page
 - [ ] Add Steps Images
@@ -14,12 +13,13 @@
 
 ## Recipes to add
 
+- [ ] Manti
+- [ ] Kartoffelpüree
+- [ ] Schaschlik a la Asemissen
+- [ ] Gebratener Reis
+
 - [ ] Passion Fruit Daiguiri
 - [ ] Blini mit Milchmädchen
-- [ ] Manti
 - [ ] Spaghetti Bolognese
-- [ ] Kartoffelpüree
 - [ ] Königsberger Klöpse nach Mama Art
-- [ ] Schaschlik a la Asemissen
 - [ ] Plow für Arme
-- [ ] Gebratener Reis

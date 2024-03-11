@@ -16,8 +16,10 @@
 
 ## Recipes to add
 
+- [x] Plow für Arme
 - [x] Manti
 - [x] Kartoffelpüree
+
 - [ ] Schaschlik a la Asemissen
 - [ ] Gebratener Reis
 
@@ -25,4 +27,3 @@
 - [ ] Blini mit Milchmädchen
 - [ ] Spaghetti Bolognese
 - [ ] Königsberger Klöpse nach Mama Art
-- [ ] Plow für Arme

@@ -16,13 +16,13 @@
 
 ## Recipes to add
 
-- [ ] Kartoffelpüree
+- [x] Manti
+- [x] Kartoffelpüree
+- [ ] Schaschlik a la Asemissen
+- [ ] Gebratener Reis
 
 - [ ] Passion Fruit Daiguiri
 - [ ] Blini mit Milchmädchen
-- [ ] Manti
 - [ ] Spaghetti Bolognese
 - [ ] Königsberger Klöpse nach Mama Art
-- [ ] Schaschlik a la Asemissen
 - [ ] Plow für Arme
-- [ ] Gebratener Reis

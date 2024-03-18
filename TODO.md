@@ -19,9 +19,9 @@
 - [x] Plow für Arme
 - [x] Manti
 - [x] Kartoffelpüree
+- [x] Gebratener Reis
 
 - [ ] Schaschlik a la Asemissen
-- [ ] Gebratener Reis
 
 - [ ] Passion Fruit Daiguiri
 - [ ] Blini mit Milchmädchen

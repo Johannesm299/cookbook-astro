@@ -20,10 +20,10 @@
 - [x] Manti
 - [x] Kartoffelpüree
 - [x] Gebratener Reis
+- [x] Spaghetti Bolognese
 
 - [ ] Schaschlik a la Asemissen
 
 - [ ] Passion Fruit Daiguiri
 - [ ] Blini mit Milchmädchen
-- [ ] Spaghetti Bolognese
 - [ ] Königsberger Klöpse nach Mama Art

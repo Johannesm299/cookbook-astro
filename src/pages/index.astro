@@ -1,20 +1,26 @@
 ---
-import RecipePost from "../components/RecipePost.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
-const allRecipes = await Astro.glob("../pages/recipes/*.mdx");
-const pageTitle = "Rezepte";
+import RecipePost from '../components/RecipePost.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+const allRecipes = await Astro.glob('../pages/recipes/*.mdx')
+const pageTitle = 'Rezepte'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <ul>
     {
-      allRecipes.map((recipe) => (
-        <RecipePost
-          url={recipe.url}
-          title={recipe.frontmatter.title}
-          subtitle={recipe.frontmatter.subtitle}
-        />
-      ))
+      allRecipes
+        .sort((a, b) =>
+          a.frontmatter.title
+            .toString()
+            .localeCompare(b.frontmatter.title.toString())
+        )
+        .map((recipe) => (
+          <RecipePost
+            url={recipe.url}
+            title={recipe.frontmatter.title}
+            subtitle={recipe.frontmatter.subtitle}
+          />
+        ))
     }
   </ul>
 </BaseLayout>

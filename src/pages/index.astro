@@ -2,25 +2,67 @@
 import RecipePost from '../components/RecipePost.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
 const allRecipes = await Astro.glob('../pages/recipes/*.mdx')
-const pageTitle = 'Rezepte'
----
-
-<BaseLayout pageTitle={pageTitle}>
-  <ul>
-    {
-      allRecipes
+const allRecipesSorted = allRecipes
         .sort((a, b) =>
           a.frontmatter.title
             .toString()
             .localeCompare(b.frontmatter.title.toString())
         )
-        .map((recipe) => (
-          <RecipePost
-            url={recipe.url}
-            title={recipe.frontmatter.title}
-            subtitle={recipe.frontmatter.subtitle}
-          />
-        ))
-    }
-  </ul>
+const half = Math.ceil(allRecipesSorted.length / 2)
+const firstColumnRecipes = allRecipesSorted.slice(0, half)
+const secondColumnRecipes = allRecipesSorted.slice(half)
+const pageTitle = 'Rezepte'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <>
+    <div class="row">
+      <div class="column">
+        <ul>
+        {
+          firstColumnRecipes
+            .map((recipe) => (
+              <RecipePost
+                url={recipe.url}
+                title={recipe.frontmatter.title}
+                subtitle={recipe.frontmatter.subtitle}
+              />
+            ))
+        }
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+        {
+          secondColumnRecipes
+            .map((recipe) => (
+              <RecipePost
+                url={recipe.url}
+                title={recipe.frontmatter.title}
+                subtitle={recipe.frontmatter.subtitle}
+              />
+            ))
+        }
+        </ul>
+      </div>
+    </div>
+  </>
 </BaseLayout>
+
+
+<style>
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, show one column instead of two */
+@media screen and (max-width: 600px) {
+  .row {
+    display: inline;
+  }
+}
+</style>

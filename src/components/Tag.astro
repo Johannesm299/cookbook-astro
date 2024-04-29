@@ -2,9 +2,7 @@
 const { tag } = Astro.props
 ---
 
-<p class="tag">
-  <a href={`/cookbook-astro/tags/${tag}`}>#{tag}</a>
-</p>
+<a class="tag" href={`/cookbook-astro/tags/${tag}`}>#{tag}</a>
 
 <style>
   .tag {

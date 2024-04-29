@@ -1,18 +1,18 @@
 ---
-import Tag from "../components/Tag.astro";
-import Ingredient from "../components/Ingredient.astro";
-import BaseLayout from "./BaseLayout.astro";
-import H2 from "../components/markdownelements/H2.astro";
-import ImageWrapper from "../components/ImageWrapper.astro";
-import { formatPubDate } from "../scripts/formatPubDate.astro";
+import Tag from '../components/Tag.astro'
+import Ingredient from '../components/Ingredient.astro'
+import BaseLayout from './BaseLayout.astro'
+import H2 from '../components/markdownelements/H2.astro'
+import ImageWrapper from '../components/ImageWrapper.astro'
+import { formatPubDate } from '../scripts/formatPubDate.astro'
 
-const { frontmatter } = Astro.props;
+const { frontmatter } = Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
   <div class="imgwrapper">
     <ImageWrapper
-      imagePath={"/src/images/" + frontmatter.imagename}
+      imagePath={'/src/images/' + frontmatter.imagename}
       altText={frontmatter.imagename}
     />
   </div>

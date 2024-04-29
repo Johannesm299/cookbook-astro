@@ -1,44 +1,84 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import RecipePost from "../../components/RecipePost.astro";
-import { getUniqueTags } from "../../scripts/getUniqueTags.astro";
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import RecipePost from '../../components/RecipePost.astro'
+import { getUniqueTags } from '../../scripts/getUniqueTags.astro'
 
 export async function getStaticPaths() {
-  const uniqueTags = await getUniqueTags();
-  const allRecipes = await Astro.glob("../recipes/*.mdx");
+  const uniqueTags = await getUniqueTags()
+  const allRecipes = await Astro.glob('../recipes/*.mdx')
 
   return uniqueTags.map((tag) => {
     const filteredRecipes = allRecipes.filter((recipe) =>
-    recipe.frontmatter.tags?.includes(tag)
-    );
+      recipe.frontmatter.tags?.includes(tag)
+    )
     return {
       params: { tag },
       props: { recipes: filteredRecipes },
-    };
-  });
+    }
+  })
 }
 
-const { tag } = Astro.params;
-const { recipes } = Astro.props;
+const { tag } = Astro.params
+const { recipes } = Astro.props
+const allRecipesSorted = recipes.sort((a, b) =>
+  a.frontmatter.title.toString().localeCompare(b.frontmatter.title.toString())
+)
+const half = Math.ceil(allRecipesSorted.length / 2)
+const firstColumnRecipes = allRecipesSorted.slice(0, half)
+const secondColumnRecipes = allRecipesSorted.slice(half)
 ---
 
 <BaseLayout pageTitle={tag}>
   <p class="hint">Rezepte die mit {tag} markiert sind</p>
-  <ul>
-    {
-      recipes.map((recipe) => (
-        <RecipePost
-          url={recipe.url}
-          title={recipe.frontmatter.title}
-          subtitle={recipe.frontmatter.subtitle}
-        />
-      ))
-    }
-  </ul>
+  <>
+    <div class="row">
+      <div class="column">
+        <ul>
+          {
+            firstColumnRecipes.map((recipe) => (
+              <RecipePost
+                url={recipe.url}
+                title={recipe.frontmatter.title}
+                subtitle={recipe.frontmatter.subtitle}
+              />
+            ))
+          }
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+          {
+            secondColumnRecipes.map((recipe) => (
+              <RecipePost
+                url={recipe.url}
+                title={recipe.frontmatter.title}
+                subtitle={recipe.frontmatter.subtitle}
+              />
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </>
 </BaseLayout>
 
 <style>
   .hint {
     color: gray;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 50%;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, show one column instead of two */
+  @media screen and (max-width: 600px) {
+    .row {
+      display: inline;
+    }
   }
 </style>
